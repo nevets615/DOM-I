@@ -39,30 +39,39 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
-const imghead = document.querySelector(".logo.png");
-
+// const imghead = document.querySelector("logo.png");
+// imghead.setAttribute('src', "img/logo.png");
 
 let headimg = document.getElementById("cta-img");
-logo.setAttribute( "src", siteContent["cta"]["img-src"])
+headimg.setAttribute( "src", siteContent["cta"]["img-src"]);
+
+// const heading = document.querySelector("cta-img");
+// headimg.setAttribute('src',"cta-img");
 
 let navo = document.querySelectorAll("a");
+navo.forEach(function(item, index){
+item.textContent = siteContent["nav"][`nav-item-${index + 1}`];
+
+});
 
 
 
-let headtext = document.getElementsByClassName("h1");
+
+let headtext = document.querySelector(".cta-text h1");
+headtext.textContent = siteContent["cta"]["h1"];
 
 
-let newButton = document.querySelector("button");
+let newButton = document.querySelector(".cta-text button");
+newButton.setAttribute("cta" siteContent)
+// let maincon = document.querySelectorAll("main-content").textContent;
 
-let maincon = document.querySelectorAll("main-content").textContent;
 
+// let con = document.querySelectorAll("contact");
 
-let con = document.querySelectorAll("contact");
+// let foot = document.getElementsByClassName("footer");
 
-let foot = document.getElementsByClassName("footer");
-
-const newDiv = document.createElement("div");
-newDiv.textContent = "This part was easy!!"
-text-content.prepend(newDiv);
+// const newDiv = document.createElement("div");
+// newDiv.textContent = "This part was easy!!"
+// text-content.prepend(newDiv);
