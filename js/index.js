@@ -43,3 +43,21 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let headimg = document.getElementById("cta-img");
 logo.setAttribute( "src", siteContent["cta"]["img-src"])
+
+let navo = document.getElementsByClassName("nav");
+
+
+let headtext = document.getElementsByClassName("h1");
+
+
+let newButton = document.querySelector("button");
+
+let maincon = document.querySelectorAll("main-content");
+
+let con = document.querySelectorAll("contact");
+
+let foot = document.getElementsByClassName("footer");
+
+const newDiv = document.createElement("div");
+newDiv.textContent = "This part was easy!!"
+text-content.prepend(newDiv);
