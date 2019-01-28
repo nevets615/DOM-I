@@ -41,10 +41,14 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+const imghead = document.querySelector(".logo.png");
+
+
 let headimg = document.getElementById("cta-img");
 logo.setAttribute( "src", siteContent["cta"]["img-src"])
 
-let navo = document.getElementsByClassName("nav");
+let navo = document.querySelectorAll("a");
+
 
 
 let headtext = document.getElementsByClassName("h1");
@@ -52,7 +56,8 @@ let headtext = document.getElementsByClassName("h1");
 
 let newButton = document.querySelector("button");
 
-let maincon = document.querySelectorAll("main-content");
+let maincon = document.querySelectorAll("main-content").textContent;
+
 
 let con = document.querySelectorAll("contact");
 
