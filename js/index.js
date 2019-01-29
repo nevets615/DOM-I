@@ -64,8 +64,11 @@ headtext.textContent = siteContent["cta"]["h1"];
 
 
 let newButton = document.querySelector(".cta-text button");
-newButton.setAttribute("cta" siteContent)
-// let maincon = document.querySelectorAll("main-content").textContent;
+newButton.textContent = siteContent['cta']["button"];
+
+
+let maincon = document.querySelectorAll("main-content");
+maincon.textContent = siteContent[]["features-h4"]
 
 
 // let con = document.querySelectorAll("contact");
