@@ -67,14 +67,51 @@ let newButton = document.querySelector(".cta-text button");
 newButton.textContent = siteContent['cta']["button"];
 
 
-let maincon = document.querySelectorAll("main-content");
-maincon.textContent = siteContent[]["features-h4"]
+let maincon = document.querySelectorAll(".text-content");
+
+maincon[0].getElementsByTagName("h4")[0].innerHTML = siteContent["main-content"]["features-h4"];
+
+maincon[0].getElementsByTagName("p")[0].innerHTML = siteContent["main-content"]["features-content"];
+
+maincon[1].getElementsByTagName("h4")[0].innerHTML = siteContent["main-content"]["about-h4"];
+
+maincon[1].getElementsByTagName("p")[0].innerHTML = siteContent["main-content"]["about-content"];
+
+maincon[2].getElementsByTagName("h4")[0].innerHTML = siteContent["main-content"]["services-h4"];
+
+maincon[2].getElementsByTagName("p")[0].innerHTML = siteContent["main-content"]["services-content"];
+
+maincon[3].getElementsByTagName("h4")[0].innerHTML = siteContent["main-content"]["product-h4"];
+
+maincon[3].getElementsByTagName("p")[0].innerHTML = siteContent["main-content"]["product-content"];
+
+maincon[4].getElementsByTagName("h4")[0].innerHTML = siteContent["main-content"]["vision-h4"];
+
+maincon[4].getElementsByTagName("p")[0].innerHTML = siteContent["main-content"]["vision-content"];
+
+let midimg = document.getElementById("middle-img");
+midimg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 
-// let con = document.querySelectorAll("contact");
+let con = document.getElementsByClassName("contact")[0];
 
-// let foot = document.getElementsByClassName("footer");
+con.getElementsByTagName("h4")[0].innerHTML = siteContent["contact"]["contact-h4"]
 
-// const newDiv = document.createElement("div");
-// newDiv.textContent = "This part was easy!!"
-// text-content.prepend(newDiv);
+con.getElementsByTagName("p")[0].innerHTML = siteContent["contact"]["address"]
+
+con.getElementsByTagName("p")[1].innerHTML = siteContent["contact"]["phone"]
+
+con.getElementsByTagName("p")[2].innerHTML = siteContent["contact"]["email"]
+
+
+
+let foot = document.querySelector("footer");
+foot.getElementsByTagName("p")[0].innerHTML = siteContent["footer"]["copyright"];
+
+
+
+const newDiv = document.createElement("div");
+newDiv.textContent = "This part was easy!!"
+text-content.prepend(newDiv);
+
+console.log(newDiv);
